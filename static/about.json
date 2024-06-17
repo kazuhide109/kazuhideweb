@@ -1,0 +1,106 @@
+[
+    {
+    "name": {
+        "JP" : "柴田一秀",
+        "EN": "KAZUHIDE SHIBATA"
+    },
+    "Born": "1995",
+    "Country": "Japan",
+    "Activitybase": "Kanagawa, Fukuoka",
+    "apps":{
+        "system": [
+            "openFrameworks",
+            "TouchDesigner",
+            "UnrealEngine", 
+            "Unity", 
+            "Swift",
+            "Flutter", 
+            "ArduinoIDE"
+        ],
+        "modeling": [
+            "Fusion360",
+            "Blender"
+        ],
+        "movie": [
+            "Davinci Resolve",
+            "Adobe etc"
+        ],
+        "sound": [
+            "Ableton Live"
+        ]
+    },
+    "Awards":[
+        {
+            "title": "WIRED CRIATIVE HACK AWARD2020 Finalist",
+            "url": "https://hack2020.wired.jp/"
+        },
+        {
+            "title": "IAG AWARDS2020 Winning a prize(入賞)",
+            "url": "https://kaiyu-art.net/iag_awards2020_report.html"
+        },
+        {
+            "title": "KDCC 2020 Incentive award (奨励賞) [as KxS]",
+            "url": "https://kdcc.info/archive/2020.html"
+        },
+        {
+            "title": "KDCC 2020 Winning a prize(入賞)",
+            "url": "https://kdcc.info/archive/2020.html"
+        },
+        {
+            "title": "ADAA2019 Student Entertainment Division Winning a Prize(学生エンターテイメント部門入賞)",
+            "url": "https://adaa.jp/ja/winners/winners2019.html"
+        },
+        {
+            "title": "ADAA2019 Student Interactive Art Division Winning a Prize(学生インタラクティブアート部門入賞)",
+            "url": "https://adaa.jp/ja/winners/winners2019.html"
+        },
+        {
+            "title": "Campus Genius Contest2019(学生CGコンテスト2019) entertainment category nominee(エンターテイメント部門ノミネート)",
+            "url": "https://archive.nya-award.jp/2019/entertainment/"
+        },
+        {
+            "title": "KDCC2019 NakayaHide, Judge Prize (中谷日出賞 ) [as KxS]",
+            "url": "https://kdcc.info/archive/2019.html"
+        },
+        {
+            "title": "ADAA2018 Student Interactive Art Division Grand Prize (学生インタラクティブアート部門大賞)",
+            "url": "https://adaa.jp/ja/winners/winners2018.html"
+        },
+        {
+            "title": "ADAA2018 Student Entertainment Division Grand Prize [as KxS] (学生エンターテイメント部門大賞)",
+            "url": "https://adaa.jp/ja/winners/winners2018.html"
+        },
+        {
+            "title": "TECHNE ID AWARD2 POV Division Outstanding Performance Award",
+            "url": "https://www.nhk.or.jp/techne/award2/index.html"
+        }
+    ],
+    "Career":[
+        {
+            "title": "Media Lab Amsterdam",
+            "year": "February - June 2014",
+            "url":  "https://medialabamsterdam.com/home/"
+        },
+        {
+            "title": "Institute of Advanced of Media Art and Science, Study of Media Expression. (九州大学芸術工学部画像設計学科)",
+            "year": "April 2014 - March 2018",
+            "url":  "http://www.vcd.design.kyushu-u.ac.jp/"
+        },
+        {
+            "title": "Institute of Advanced of Media Art and Science, Study of Media Expression(IAMAS). (情報科学芸術大学院大学(IAMAS)メデイア表現研究科))",
+            "year": "April 2018~2020",
+            "url":  "https://www.iamas.ac.jp/"
+        },
+        {
+            "title": "PARTY inc.",
+            "year": "April 2020 - January 2021",
+            "url":  "https://prty.jp/"
+        },
+        {
+            "title": "siro inc.",
+            "year": "April 2021 - 2024",
+            "url":  "https://si-ro.jp/"
+        }
+    ]
+    }
+]
