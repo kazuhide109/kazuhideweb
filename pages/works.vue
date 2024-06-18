@@ -39,7 +39,7 @@ export default {
   setup() {
     const info_list = ref<Blog[]>([]);
     const loading = ref(true);
-    const explain = '映像を「撮る、編集する、見る」ことの過程や仕組みを主なテーマに視覚表現を行っています。\nI am making visual expressions based on the process and mechanism of “shooting, editing, and viewing” as the main starting point of my ideas.';
+    const explain = '映像を「撮る、編集する、見る」過程や仕組みを主なテーマに視覚表現を行っています\nI am making visual expressions based on the process and mechanism of “shooting, editing, and viewing” as the main starting point of my ideas.';
 
     console.log('microcms-----');
 
@@ -73,17 +73,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 
-html, body, #__nuxt {
-  height: 100%;
-  margin: 0;
-}
-
-.plane-text{
-  font-size: 16px;
-  font-family: "Kadwa";
-  white-space: pre-wrap;
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .picup-text{

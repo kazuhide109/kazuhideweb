@@ -21,10 +21,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/static/style.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/youtube.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -46,7 +48,14 @@ export default {
     '@nuxt/content',
     //add
     "nuxt-microcms-module",
+    '@nuxtjs/style-resources',
   ],
+
+  styleResources: {
+    css: [
+      '@/static/style.css'
+      ]
+   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -66,6 +75,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: [
+      'vue-youtube-embed' // プラグインをトランスパイルする
+    ]
   },
 
   devtools: { enabled: true },

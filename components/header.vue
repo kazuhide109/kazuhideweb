@@ -1,9 +1,9 @@
 <template>
   <header class="header">
-  <div class="container">
+  <div class="head-content">
     <img src="../static/icon_alpha.svg" alt="Icon Image" class="image-size"> 
     <!-- <p>WW: {{ windowWidth }}px</p> -->
-      <nav v-if="windowWidth > 968">
+      <nav v-if="windowWidth > 800">
         <ul class="gnav">
           <li><nuxt-link to="/" active-class="active-list" exact>WORKS</nuxt-link></li>
           <li><nuxt-link to="/projects" active-class="active-list" exact>PROJECTS</nuxt-link></li>
@@ -32,18 +32,15 @@ export default {
   },
   methods: {
     updateWindowWidth() {
+      if (process.client) {
       this.windowWidth = window.innerWidth;
+      }
     },
     spNavClick() {
       this.$emit("clickSpNav");
     }
   },
-  beforeMount() {
-    if (process.client) {
-      this.updateWindowWidth();
-    }
-  },
-  created() {
+  mounted() {
     if (process.client) {
       this.updateWindowWidth = this.updateWindowWidth.bind(this);
       window.addEventListener('resize', this.updateWindowWidth);
@@ -63,9 +60,10 @@ export default {
   }
 
   .image-size {
-    /* transform: transrate(240px 0px); */
-    width: 50px;
-    height: 50px;
+    /* transform: transrate(20px 0px); */
+    margin-left: -13px;
+    width: 40px;
+    height: 40px;
   }
   .menu-size {
     width: 50px;
@@ -73,7 +71,7 @@ export default {
     cursor: pointer;
   }
 
-  .container {
+  .head-content {
     display: flex;
     justify-content: space-between;
     align-items: center;

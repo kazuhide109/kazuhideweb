@@ -19,12 +19,13 @@
           <div class="vertical-line"></div>
         </div>
         <a :href="selectedItem.url" target="_blank" rel="noopener noreferrer">
-        <!-- <nuxt-link :to="selectedItem.url"> -->
           <div class="web-btn-line">
             <div class="web-btn-text">Jump to Website</div>
           </div>
-        <!-- </nuxt-link> -->
         </a>
+        <div  @click="$router.go(-1)" class="back-button-pos">
+            <div class="back_button2">←Back</div>
+          </div>
       </div>
     </div>
   </div>

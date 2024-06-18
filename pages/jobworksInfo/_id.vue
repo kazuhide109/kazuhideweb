@@ -49,7 +49,9 @@
               player-width=100%
             />
           </div>
-          
+          <div  @click="$router.go(-1)" class="back-button-pos">
+            <div class="back_button2">←Back</div>
+          </div>
         </div>
     </div>
       

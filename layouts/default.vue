@@ -6,9 +6,7 @@
       <Spnav @clickSpNave="clickSpNav" />
     </div>
   </div>
-    <div class="rotated-text">
-      KAZUHIDE SHIBATA
-    </div>
+    <div class="rotated-text">KAZUHIDE SHIBATA</div>
     <nuxt />
     <Footer />
   </div>
@@ -62,12 +60,12 @@ html, body, #__nuxt {
 .rotated-text {
   position: absolute;
   left: 0;
-  top: 3.5%;
+  top: 50px;
   transform: rotate(90deg) translateY(-40%);
   transform-origin: left bottom;
   white-space: nowrap;
   color: black;
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 25px;
   font-family: "Kadwa";
 }

@@ -74,12 +74,6 @@ export default {
 
 <style scoped>
 
-.plane-text{
-  font-size: 16px;
-  font-family: "Kadwa";
-  white-space: pre-wrap;
-}
-
 .picup-text{
   font-size: 20px;
   font-family: "Kadwa";

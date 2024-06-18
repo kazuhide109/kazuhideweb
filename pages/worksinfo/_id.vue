@@ -39,15 +39,18 @@
       <div class="text">{{ selectedItem.media }}</div>
       
       <div class="section-text">Award/Exhibition</div>
-      <div class="text">{{ selectedItem.media }}</div>
+      <div class="text">{{ selectedItem.awards }}</div>
+      
       <div v-if="selectedItem?.youtube">
-        <div class="line-container">
+        <div v-if="videoId">
+          <div class="line-container">
           <div class="vertical-line"></div>
         </div>
         <youtube
           :video-id=videoId :player-vars="{autoplay: 0}"
           player-width=100%
         />
+        </div>
       </div>
       <div  @click="$router.go(-1)" class="back-button-pos">
         <div class="back_button2">←Back</div>
@@ -64,11 +67,7 @@
 import Vue from 'vue';
 import axios from 'axios';
 import { defineComponent } from 'vue';
-import VueYouTubeEmbed from 'vue-youtube-embed';
 import type { Blog } from '~/types/blog';
-// import { mapState } from 'vuex';
-
-Vue.use(VueYouTubeEmbed);
 
 export default defineComponent({
   name: 'WorksInfo',
@@ -79,7 +78,7 @@ export default defineComponent({
       loading: true,
       selectedItem: null as Blog | null,
       currentLink: '',
-      videoId: '',
+      // videoId: '',
     };
   },
 
@@ -96,7 +95,7 @@ export default defineComponent({
         this.info_list = data.contents;
         const id = this.$route.params.id;
         this.selectedItem = this.getItemById(data, id) || null;
-        this.videoId = this.selectedItem?.youtube as string;
+        // this.videoId = this.selectedItem?.youtube as string;
       } else {
         console.error('No contents found in the data');
       }
@@ -104,6 +103,12 @@ export default defineComponent({
       console.error('Error fetching data from MicroCMS:', error);
     } finally {
       this.loading = false;
+    }
+  },
+
+  computed: {
+    videoId(): string {
+      return this.selectedItem?.youtube || '';
     }
   },
 
